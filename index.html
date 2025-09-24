@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Magical Birthday Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="bg"></canvas>
+
+    <div class="overlay">
+        <div id="start-screen">
+            <h1>A Special Birthday Surprise!</h1>
+            <p>A magical message is waiting just for you.</p>
+            <button id="start-btn">Show Wish</button>
+        </div>
+        
+        <div id="final-message" class="hidden">
+            <h1>My Dearest Sara,</h1>
+            <p>Words feel too small to capture the love and gratitude I feel for you. You're more than a friend; you're the sister my heart chose. Watching you grow and shine has been one of the greatest joys of my life. You've been my rock through every laugh and every tear, and I can't imagine this journey without you.</p>
+            <p>May this new year of your life be filled with all the happiness you deserve, and may every day bring you closer to your wildest dreams. Here's to more adventures, more late-night talks, and a friendship that lasts a lifetime.</p>
+            <p>Happy Birthday, my best friend. You are truly a gift to the world.</p>
+            <p>With all my heart,</p>
+            <p>Huda</p>
+            <p>25 September 2025</p>
+            <button id="say-thanks-btn">Say Thanks</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

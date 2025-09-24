@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; 
+    color: #444;
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: 0;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    pointer-events: none; 
+    z-index: 1;
+}
+
+#start-screen, #final-message {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 40px;
+    border-radius: 20px;
+    pointer-events: auto; 
+    transition: opacity 0.5s ease-out;
+    max-width: 90%;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.7); /* Gold glow */
+}
+
+#final-message {
+    background: #e6f7ff; /* Light Blue */
+    color: #4a2a69; /* Dark Purple */
+    border: 5px solid #ffb6c1; /* Light Pink Border */
+    box-shadow: 0 0 30px #ffb6c1; /* Pink Glow */
+    text-shadow: none;
+    transform: scale(0.1);
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.hidden {
+    display: none;
+}
+
+h1, h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    color: #ff69b4;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+#final-message h1, #final-message p {
+    color: #4a2a69;
+}
+
+#final-message h1 {
+    text-shadow: none;
+}
+
+p {
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    margin-top: 30px;
+    font-size: 1.2em;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #ff69b4; 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff85c1;
+    transform: translateY(-3px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.8em;
+    }
+
+    #start-screen, #final-message {
+        padding: 20px;
+        max-width: 95%;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px 20px;
+    }
+}
